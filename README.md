@@ -291,7 +291,7 @@ composer require symfony/twig-pack
 composer require symfony/swiftmailer-bundle
 ```
 
-- dans .env, ligne 39 (poutr Gmail) :
+- dans .env, ligne 39 (pour Gmail) :
 ```
 MAILER_URL=gmail://david.hurtrel@gmail.com:password@localhost
 ```
@@ -436,3 +436,9 @@ php bin/console make:migration
 php bin/console doctrine:migrations:migrate
 ```
 - importer des données directement en bdd si nécessaire
+
+## generate CRUD 
+
+''' 
+composer require sensio/generator-bundle 
+'''

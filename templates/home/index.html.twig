@@ -1,64 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil{% endblock %}
+{% block title %}{% trans %}Accueil!{% endtrans %}{% endblock %}
 
 {% block body %}
-    <header class="bg-dark my-auto">
-        <h1 class="text-center">X_Cosm&eacute;tique</h1>
-        <h2 class="text-center">{% trans %}Cosm&eacute;tique pour tous{% endtrans %}</h2>
-    </header>
-
-    <div class="container p-5">
-        <div class="row py-5">
-            <div class="col-12">
-                <h2>{% trans %}Les Produits{% endtrans %}</h2>
-            </div>
-        </div>
-        <div class="row">
-
-            {% for produit in produits %}
-                {# {% if loop.index <= 6 %} #}
-                <div class="col-4 p-3">
-                    <div class="card">
-
-                        <img class="card-img-top" src="{{ asset('img/parfum/' ~ parfum.parfum_1) }}" alt="photo principale {{ parfum.titre }}">
-
-                        <div class="card-body">
-                            <h5 class="card-title">{{ parfum.titre }}</h5>
-                            <p class="card-text">{{ parfum.description }}</p>
-                        </div>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">{% trans %}description{% endtrans %} : {{ parfum.description }}</li>
-
-                            <li class="list-group-item">{% trans %}Prix{% endtrans %} : {{ parfum.prix }}</li>
-
-                        </ul>
-
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-
-                    </div>
-                </div>
-                {# {% endif %} #}
-            {% endfor %}
-
-        </div>
-
-        <div class="row py-5">
-            <div class="col-12 text-center">
-                <button type="button" class="btn btn-outline-dark">{% trans %}Voir tout es produits{% endtrans %}</button>
-            </div>
-        </div>
-
-        <div class="dropdown-divider m-5"></div>
-
-        <div class="row py-5">
-            <div class="col-12">
-                <h2>{% trans %}Les propri&eacute;taires{% endtrans %}</h2>
-            </div>
-        </div>
+    <div class="header" style="background: white">
+        <img src="img/logo_fond_transparent.png" alt="logo Cosmo&Bio">
     </div>
 {% endblock %}

@@ -13,7 +13,7 @@ class HomeController extends AbstractController
      */
     public function index(ProductRepository $productRepository)
     {
-        $product = $productRepository->findthree();
+        $product = $productRepository->findAll();
         return $this->render('home/index.html.twig', [
             'product' => $product,
         ]);
