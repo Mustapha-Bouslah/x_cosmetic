@@ -1,0 +1,185 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductController!{% endblock %}
+
+{% block body %}
+    <section id="content">
+        <div class="content-wrap">
+            <div class="container clearfix">
+
+                <!-- Shop
+                ============================================= -->
+                <div id="shop" class="shop row grid-container gutter-30" data-layout="fitRows">
+
+                    {% for p in listproducts %}
+                        <div class="product col-md-4 col-sm-6 col-12">
+                            <div class="grid-inner">
+                                <div class="product-image">
+                                    <a href="#"><img src="{{ asset('img/cap_1.png') }}" alt="Checked Short Dress"></a>
+                                    <!--  <a href="#"><img src="images/shop/dress/2-1.jpg" alt="Checked Short Dress"></a> -->
+                                    <div class="sale-flash badge badge-secondary p-2">Out of Stock</div>
+                                    <div class="bg-overlay">
+                                        <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                            <a href="#" class="btn btn-dark mr-2"><i class="icon-shopping-cart"></i></a>
+                                            <a href="include/ajax/shop-item.html" class="btn btn-dark" data-lightbox="ajax"><i class="icon-line-expand"></i></a>
+                                        </div>
+                                        <div class="bg-overlay-bg bg-transparent"></div>
+                                    </div>
+                                </div>
+                                <div class="product-desc">
+                                    <div class="product-title"><h3><a href="#">{{ p.title }}</a></h3></div>
+                                    <div class="product-price"><del>$24.99</del> <ins>$12.49</ins></div>
+                                    <div class="product-rating">
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star3"></i>
+                                        <i class="icon-star-half-full"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <div class="product col-md-4 col-sm-6 col-12">
+                        <div class="grid-inner">
+                            <div class="product-image">
+                                <a href="#"><img src="{{ asset('img/cap_1.png') }}" alt="Checked Short Dress"></a>
+                                <!--  <a href="#"><img src="images/shop/dress/2-1.jpg" alt="Checked Short Dress"></a> -->
+                                <div class="sale-flash badge badge-secondary p-2">Out of Stock</div>
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                        <a href="#" class="btn btn-dark mr-2"><i class="icon-shopping-cart"></i></a>
+                                        <a href="include/ajax/shop-item.html" class="btn btn-dark" data-lightbox="ajax"><i class="icon-line-expand"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <div class="product-title"><h3><a href="#">Produit</a></h3></div>
+                                <div class="product-price"><del>$24.99</del> <ins>$12.49</ins></div>
+                                <div class="product-rating">
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star-half-full"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product col-md-4 col-sm-6 col-12">
+                        <div class="grid-inner">
+                            <div class="product-image">
+                                <a href="#"><img src="{{ asset('img/cap_1.png') }}" alt="Checked Short Dress"></a>
+                                <!--  <a href="#"><img src="images/shop/dress/2-1.jpg" alt="Checked Short Dress"></a> -->
+                                <div class="sale-flash badge badge-secondary p-2">Out of Stock</div>
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                        <a href="#" class="btn btn-dark mr-2"><i class="icon-shopping-cart"></i></a>
+                                        <a href="include/ajax/shop-item.html" class="btn btn-dark" data-lightbox="ajax"><i class="icon-line-expand"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <div class="product-title"><h3><a href="#">Produit</a></h3></div>
+                                <div class="product-price"><del>$24.99</del> <ins>$12.49</ins></div>
+                                <div class="product-rating">
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star-half-full"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <div class="product col-md-4 col-sm-6 col-12">
+                        <div class="grid-inner">
+                            <div class="product-image">
+                                <a href="#"><img src="{{ asset('img/cap_1.png') }}" alt="Checked Short Dress"></a>
+                                <!--  <a href="#"><img src="images/shop/dress/2-1.jpg" alt="Checked Short Dress"></a> -->
+                                <div class="sale-flash badge badge-secondary p-2">Out of Stock</div>
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                        <a href="#" class="btn btn-dark mr-2"><i class="icon-shopping-cart"></i></a>
+                                        <a href="include/ajax/shop-item.html" class="btn btn-dark" data-lightbox="ajax"><i class="icon-line-expand"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <div class="product-title"><h3><a href="#">Produit</a></h3></div>
+                                <div class="product-price"><del>$24.99</del> <ins>$12.49</ins></div>
+                                <div class="product-rating">
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star-half-full"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <div class="product col-md-4 col-sm-6 col-12">
+                        <div class="grid-inner">
+                            <div class="product-image">
+                                <a href="#"><img src="{{ asset('img/cap_1.png') }}" alt="Checked Short Dress"></a>
+                                <!--  <a href="#"><img src="images/shop/dress/2-1.jpg" alt="Checked Short Dress"></a> -->
+                                <div class="sale-flash badge badge-secondary p-2">Out of Stock</div>
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                        <a href="#" class="btn btn-dark mr-2"><i class="icon-shopping-cart"></i></a>
+                                        <a href="include/ajax/shop-item.html" class="btn btn-dark" data-lightbox="ajax"><i class="icon-line-expand"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <div class="product-title"><h3><a href="#">Produit</a></h3></div>
+                                <div class="product-price"><del>$24.99</del> <ins>$12.49</ins></div>
+                                <div class="product-rating">
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star-half-full"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <div class="product col-md-4 col-sm-6 col-12">
+                        <div class="grid-inner">
+                            <div class="product-image">
+                                <a href="#"><img src="{{ asset('img/cap_1.png') }}" alt="Checked Short Dress"></a>
+                                <!--  <a href="#"><img src="images/shop/dress/2-1.jpg" alt="Checked Short Dress"></a> -->
+                                <div class="sale-flash badge badge-secondary p-2">Out of Stock</div>
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                        <a href="#" class="btn btn-dark mr-2"><i class="icon-shopping-cart"></i></a>
+                                        <a href="include/ajax/shop-item.html" class="btn btn-dark" data-lightbox="ajax"><i class="icon-line-expand"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                </div>
+                            </div>
+                            <div class="product-desc">
+                                <div class="product-title"><h3><a href="#">Produit</a></h3></div>
+                                <div class="product-price"><del>$24.99</del> <ins>$12.49</ins></div>
+                                <div class="product-rating">
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star3"></i>
+                                    <i class="icon-star-half-full"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                
+
+                </div><!-- #shop end -->
+
+            </div>
+        </div>
+    </section><!-- #content end -->
+{% endblock %}

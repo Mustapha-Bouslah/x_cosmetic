@@ -47,26 +47,5 @@ class ProductRepository extends ServiceEntityRepository
         ;
     }
     */
-    public function findThree() /* pour ne sélectionner que 3 produits */
-    {
-        return $this->createQueryBuilder('s') /* 's' est un alias */
-        ->andWhere('s.id > :val') /* on cherhce un id supérieur à une valeur */
-        ->setParameter('val', '0') /* on donne la valeur */
-        ->orderBy('s.id', 'DESC') /* tri en ordre décroissant */
-        ->setMaxResults(3) /* on sélectionne 6 résultats maximum */
-        ->getQuery() /* requête */
-        ->getResult() /* résultats */
-            ;
-    }
 
-    public function findByMinPrice($priceMini) /* pour sélectionner par prix */
-    {
-        return $this->createQueryBuilder('m')
-            ->andWhere('ms.superficie < :val') /* on cherche un prix < une valeur */
-            ->setParameter('val', $priceMini) /* on définit cette valeur*/
-            ->orderBy('m.price', 'DESC') /* tri en ordre décroissant */
-            ->getQuery() /* requête */
-            ->getResult() /* résultats */
-            ;
-    }
 }

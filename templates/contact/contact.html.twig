@@ -1,12 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}contact{% endblock %}
+{% block stylesheets %}
 
+{% endblock %}
 {% block body %}
 
     <div class="container-fluid">
 
-        <div class="row p-5 bg-light">
+        <div class="row p-5 bg-light" style="margin-inline: 0%">
             <div class="col-12 text-center">
                 <h1>Contactez-Nous</h1>
             </div>
@@ -18,7 +20,12 @@
                 {{ form_end(formulaireDeContact) }}
             </div>
         </div>
-
     </div>
-
+    {% for label, messages in app.flashes(['success', 'danger']) %}
+        {% for message in messages %}
+            <div class="flash-{{ label }} p-3 fixed-top bg-{{ label }} text-white text-center">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
 {% endblock %}
